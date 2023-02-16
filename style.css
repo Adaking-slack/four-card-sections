@@ -15,7 +15,10 @@ main{
 
 .header{
     width: 300px;
-    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  margin-top: 3em;
 }
 
 .header-para{
@@ -31,10 +34,10 @@ main{
 }
 
 .header-p{
-    margin-bottom: 0.9em;
+    margin-bottom: 1em;
     font-size: 0.9em;
     color: hsl(229, 6%, 66%);
-  width: 100%;
+   
 }
 
 .boxes{
@@ -56,9 +59,10 @@ main{
 }
 
 .box p{
-    font-size: 12px;
+    font-size: 15px;
     color: hsl(229, 6%, 66%);
     margin-bottom: 1em;
+    text-align: left;
 
 }
 
@@ -71,12 +75,51 @@ main{
 .box1{
     border-top: hsl(180, 62%, 55%) solid;
 }
-.box2{
+.row1{
     border-top: hsl(0, 78%, 62%) solid;
 }
-.box3{
+.row2{
     border-top: hsl(34, 97%, 64%) solid;
 }
-.box4{
+.box3{
     border-top: hsl(212, 86%, 64%) solid;
 }
+
+
+@media only screen and (min-width: 750px) {
+  main{
+    margin: 0 auto;
+    padding-left: 4em;
+    padding-right: 4em;
+    height: 100vh;
+  }
+.header{
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 2em;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   text-align: left;
+   padding-top: 0em;
+}
+
+.box{
+    margin: 0.7em;
+       position: relative;
+
+}
+.row1,.row2{
+    height: 100px;
+}
+
+.box img{
+    position: absolute;
+    right: 0%;
+    bottom: 7%;
+    padding: 10px;
+}
+  }
