@@ -103,17 +103,21 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
+   margin: 0 auto;
    text-align: left;
-   padding-top: 0em;
+   padding-top: 1.2em;
+   width: 85%;
 }
 
 .box{
     margin: 0.9em;
        position: relative;
+       
 
 }
 .row1,.row2{
     height: 100px;
+    margin-top: 1.3em;
 }
 
 .box img{
